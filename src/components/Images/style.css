@@ -1,0 +1,14 @@
+.images {
+    background-color: var(--dark03);
+    padding-inline: 8.5%;
+}
+
+.images__image {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .images {
+        padding-inline: 4%;
+    }
+}

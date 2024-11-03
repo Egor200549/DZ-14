@@ -1,0 +1,44 @@
+.portfolio {
+    padding-inline: 8.5%;
+}
+
+.portfolio__link {
+    color: var(--grey95);
+    font-weight: 500;
+    line-height: 24.59px;
+    border-bottom: 1px solid #2F2F37;
+    padding-block: 6px;
+    text-wrap-mode: nowrap;
+    width: fit-content;
+}
+
+.protfolio__project {
+    flex-grow: 1;
+}
+
+.portfolio__image {
+    width: 100%;
+}
+
+@media (max-width: 1440px) {
+    .portfolio__link {
+        font-size: 14px;
+        line-height: 19.12px;
+        padding-block: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+        padding-inline: 4%;
+    }
+
+    .portfolio__cards {
+        flex-grow: unset;
+        overflow: hidden;
+    }
+
+    .protfolio__project {
+        min-width: 100%;
+    }
+}

@@ -1,0 +1,19 @@
+.comment {
+    position: relative;
+    width: 26%;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid var(--dark08);
+    background-color: var(--dark06);
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+@media (max-width: 1440px) {
+    .comment {
+        padding: 30px;
+        width: calc(100% - 60px);
+        min-width: calc(100% - 60px);
+        flex-grow: unset;
+    }
+}

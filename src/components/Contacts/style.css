@@ -1,0 +1,15 @@
+.contacts {
+    padding: 20px 8.5%;
+    background-color: var(--dark03);
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .contacts__step {
+        order: var(--i);
+    }
+}

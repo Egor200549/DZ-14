@@ -1,0 +1,29 @@
+.comments {
+    padding-inline: 8.5%;
+}
+
+.comments_buttons {
+    align-self: flex-end;
+}
+
+@media (max-width: 1300px) {
+    .comments__part {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .comments {
+        padding-inline: 4%;
+        margin-bottom: 40px;
+    }
+
+    .comments__part {
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    .comments_buttons {
+        align-self: unset;
+    }
+}

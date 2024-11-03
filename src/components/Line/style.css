@@ -1,0 +1,49 @@
+.line {
+    background-color: var(--dark06);
+    border-width: 1px 0px 1px 0px;
+    border-style: solid;
+    border-color: var(--dark12);
+    padding: 20px;
+}
+
+.items-wrap {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: 20px;
+    width: 100%;
+}
+
+.items {
+    flex-shrink: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    min-width: 100%;
+}
+
+.marquee {
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+.purple_text {
+    text-transform: uppercase;
+    color: var(--purple90);
+}
+
+@media (max-width: 1440px) {
+    .line {
+        padding: 16px;
+    }
+}
